@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dindin's da Nanda</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="light-mode">
+
+  <!-- Header -->
+  <header class="bg-dark text-white py-3 sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3 mb-0">Dindin's da Nanda</h1>
+      <div>
+        <nav class="d-inline-block">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link text-white" href="#">Início</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#sabores">Sabores</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#footer">Contato</a></li>
+          </ul>
+        </nav>
+        <button id="toggle-theme" class="btn btn-outline-light btn-sm ms-3">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero text-white text-center py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="display-4">Bem-vindo a Fábrica de Dindins</h2>
+      <p class="lead">Enquanto você chupa, o meu negócio cresce !!</p>
+      <button class="btn btn-light mt-3" onclick="scrollToSection()">Saiba Mais</button>
+    </div>
+  </section>
+
+  <!-- Carrossel -->
+  <section class="py-5 bg-dark">
+    <div class="container" data-aos="fade-up">
+      <div id="carouselImagens" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="/teste/v4/imagens/dindin_morango.jpeg" class="d-block w-100 carousel-img-ajustada" alt="Dindin de Morango">
+          </div>
+          <div class="carousel-item">
+            <img src="/teste/v4/imagens/dindin_cupuacu.jpeg" class="d-block w-100 carousel-img-ajustada" alt="Dindin de Cupuaçu">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselImagens" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselImagens" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero text-white text-center py-5" style="background: linear-gradient(135deg, #AEEEEE, #FFB6C1);">
+    <div class="container" data-aos="fade-up">
+      <h2 class="display-4">Dindin's variados </h2>
+      <p class="lead">Os Dindin's mais saborosos desse verão amazonense!</p>
+      <button class="btn btn-warning mt-3" onclick="scrollToSection()">Ver Sabores</button>
+    </div>
+  </section>
+
+  <!-- Sabores-->
+  <section id="sabores" class="py-5">
+  <div class="sabores-container">
+
+    <div class="card h-100 text-center p-3 shadow" style="background: linear-gradient(to right, #ffb6c1 70%, #8b4513 30%);" data-aos="fade-up">
+      <h3>Morango com Nutella</h3>
+      <p>Delicioso mousse de morango, com uma generosa calda de Nutella!</p>
+    </div>
+
+    <div class="card h-100 text-center p-3 shadow" style="background: linear-gradient(to right, #FDFD96 70%, #8b4513 30%);" data-aos="fade-up"
+    data-aos-delay="100">
+      <h3>Maracujá com Nutella</h3>
+      <p>Perfeito pra aqueles estresses diários que nem os da Dona!</p>
+    </div>
+
+    <div class="card h-100 text-center p-3 shadow" style="background: linear-gradient(to right, #f3fbfd 70%, #8b4513 30%);" data-aos="fade-up"
+      data-aos-delay="200">
+      <h3>Prestígio</h3>
+      <p>Que tal uma praia com uma aguinha de... ops Dindin de côco!!</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-5 bg-light">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="mb-4">Sobre Nós</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 text-center p-3 shadow">
+            <h3>Qualidade</h3>
+            <p>Trabalhamos com os melhores dindis do mercado.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 text-center p-3 shadow">
+            <h3>Inovação</h3>
+            <p>Diversos sabores com uma fórmula secreta.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 text-center p-3 shadow">
+            <h3>Compromisso</h3>
+            <p>Foco total na sua experiência.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Botão Whatsapp-->
+  <div class="text-center mt-4">
+    <a href="https://wa.me/5592992916652?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20de%20dindins!%20😋"
+      class="whatsapp-float" target="_blank">
+      💬 Pedir pelo WhatsApp
+    </a>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Desenvolvido por Gustavo Carneiro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    AOS.init(); // Inicializa as animações
+  </script>
+</body>
+
+</html>

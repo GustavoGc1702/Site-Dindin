@@ -1,0 +1,98 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* Hero personalizado */
+.hero {
+  background: linear-gradient(to right, #00cba9, #006d77);
+}
+
+/* Cartões */
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Modo escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .bg-light {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .card {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body.dark-mode footer,
+body.dark-mode header {
+  background-color: #000 !important;
+}
+
+/* Modo claro */
+body.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.carousel-inner {
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 12px; /* mantém a borda arredondada */
+}
+
+.carousel-img-ajustada {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 18px; /* Menor fonte, mais equilibrado */
+  padding: 12px 24px; /* Botão retangular com bom espaçamento */
+  border-radius: 10px; /* 🔁 Aqui está a diferença! */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  z-index: 999;
+  transition: transform 0.2s;
+}
+
+.sabores-container .card {
+  margin-bottom: 1px; /* 👈 espaçamento de 1px entre os cards */
+}
+
+.sabores-container .card:last-child {
+  margin-bottom: 0;
+}
+
+body.dark-mode #sabores .card {
+  color: black !important;
+}
+
+
+
+
+
+
+
